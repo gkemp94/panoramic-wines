@@ -15,6 +15,7 @@
     "prettier": "^1.18.2"
   },
   "scripts": {
+    "dev": "hs watch --portal=dev src themes/panoramic",
     "eslint": "eslint src",
     "lint": "eslint src && prettier --list-different 'src/**/*.js' 'src/**/*.json'",
     "prettier:write": "prettier --write 'src/**/*.js' 'src/**/*.json'"

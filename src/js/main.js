@@ -8,6 +8,7 @@
         }
     };
   }
+  const toggleButton = document.querySelector('.header__toggle');
 
   var HIDE_FOCUS_STYLES_CLASS = 'disable-focus-styles';
   var SHOW_FOCUS_STYLES_CLASS = 'enable-focus-styles';
@@ -59,7 +60,7 @@
     allToggles.forEach(function(toggle) {
       toggle.classList.toggle('hide')
     })
-
+    toggleButton.classList.toggle('active');
     Nav.classList.toggle('open')
     navToggle.classList.toggle('open')
 
@@ -70,7 +71,7 @@
     allToggles.forEach(function(toggle) {
       toggle.classList.toggle('hide')
     })
-
+    toggleButton.classList.toggle('active');
     LangSwitcher.classList.toggle('open')
     langToggle.classList.toggle('open')
 
@@ -120,9 +121,13 @@
       }
 
       // Toggles the mobile views for menu, search, and close button
-      navToggle.addEventListener('click', toggleNav);
+      // navToggle.addEventListener('click', toggleNav);
+      toggleButton.addEventListener('click', toggleNav);
+      
       // search.addEventListener('click', toggleSearch);
-      closeToggle.addEventListener('click', closeAll);
+      // closeToggle.addEventListener('click', closeAll);
     }
   });
 })();
+
+
