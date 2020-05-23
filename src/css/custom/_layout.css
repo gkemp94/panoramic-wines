@@ -1,0 +1,23 @@
+.container {
+  /* TODO: Update this to variable*/
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px; 
+}
+
+.row {
+  display: flex;
+  height: 100%;
+}
+
+.row.align-center {
+  align-items: center;
+}
+
+.row.space-between {
+  justify-content: space-between;
+}
+
+.col {
+  flex: 1 1 auto;
+}

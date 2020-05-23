@@ -116,27 +116,30 @@
 {###########################   3. Typography   #############################}
 {###########################################################################}
 
+
+
+/*
 html {
   font-size: {{ body_font.size ~ body_font.size_unit }};
 }
-
 body {
   {{ body_font.style }};
   color: {{ body_font.color }};
 }
+*/
 
 /* Paragraphs */
-
+/*
 p {
   {{ body_font.style }};
 }
-
+*/
 /* Anchors */
-
+/*
 a {
   color: {{ anchor_font_color }};
 }
-
+*/
 a:hover,
 a:focus {
   color: {{ color_variant(anchor_font_color, -40) }};
@@ -144,44 +147,6 @@ a:focus {
 
 a:active {
   color: {{ color_variant(anchor_font_color, 40) }};
-}
-
-/* Headings */
-
-h1 {
-  {{ heading_one.style }};
-  color: {{ heading_one.color }};
-  font-size: {{ heading_one.size ~ heading_one.size_unit }};
-}
-
-h2 {
-  {{ heading_two.style }};
-  color: {{ heading_two.color }};
-  font-size: {{ heading_two.size ~ heading_two.size_unit }};
-}
-
-h3 {
-  {{ heading_three.style }};
-  color: {{ heading_three.color }};
-  font-size: {{ heading_three.size ~ heading_three.size_unit }};
-}
-
-h4 {
-  {{ heading_four.style }};
-  color: {{ heading_four.color }};
-  font-size: {{ heading_four.size ~ heading_four.size_unit }};
-}
-
-h5 {
-  {{ heading_five.style }};
-  color: {{ heading_five.color }};
-  font-size: {{ heading_five.size ~ heading_five.size_unit }};
-}
-
-h6 {
-  {{ heading_six.style }};
-  color: {{ heading_six.color }};
-  font-size: {{ heading_six.size ~ heading_six.size_unit }};
 }
 
 /* Blockquote */
@@ -359,18 +324,19 @@ tbody + tbody {
 {###########################   7. Site header   ############################}
 {###########################################################################}
 
+/*
 .header {
   background-color: {{ header_bg_color }};
 }
-
-body .navigation-primary a,
-.header__logo .logo-company-name,
+*/
+body,
 .header__language-switcher-label-current,
 .header__language-switcher .lang_list_class li a {
   color: {{ header_nav_link_color }};
-  font-family: {{ body_font.font }};
+  font-family: {{ body_font.font }}; 
 }
 
+/*
 body .navigation-primary a:hover,
 body .navigation-primary a:focus,
 .header__language-switcher-label-current:hover,
@@ -379,6 +345,7 @@ body .navigation-primary a:focus,
 .header__language-switcher .lang_list_class li a:focus {
   color: {{ color_variant(header_nav_link_color, -40) }};
 }
+*/
 
 body .navigation-primary a:active,
 body .header__language-switcher-label-current:active,

@@ -9,8 +9,12 @@
 {% block body %}
 <main class="body-container-wrapper">
   {# All templates are recommended to have an h1 present for both accessibility and SEO best practice. This should be at the top of the template before any other textual content. The h1 element below is within a dnd area to allow content editors the ability to adjust the content and alignment of the text. #}
+  {% module 
+    'hero-section' 
+    path='../modules/hero',
+    label='Hero Section'
+  %}
   {% dnd_area 'dnd_area' class='body-container body-container--home', label='Main section' %}
-
     {# Form section #}
     {% dnd_section
       background_color={
@@ -39,7 +43,7 @@
           {% dnd_module path='@hubspot/rich_text'%}
             {% module_attribute 'html' %}
               <h1>This is your main headline.</h1>
-              <p>Use this space to tell everyone about what you have to offer.</p>
+              <p>Use this space to tell everyone about what you have to offer. This is a <a href="#">Link</a></p>
             {% end_module_attribute %}
           {% end_dnd_module %}
         {% end_dnd_row %}

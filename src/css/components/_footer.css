@@ -1,13 +1,29 @@
+
 .footer {
-  background-color: #F8FAFC;
-  text-align: center;
+  padding: 100px 20px;
 }
 
-.footer__container.content-wrapper {
-  padding: 1rem 0;
+.footer__logo h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.footer__links {
+  list-style: none;
+  padding: 0;
+  font-size: .85em;
+  line-height: 2;
+  opacity: .75;
 }
 
 .footer__copyright {
-  font-size: 0.7rem;
-  margin: 0.5rem 0;
+  opacity: .75;
+  font-size: 0.7em;
+  margin: 1rem 0;
+}
+
+.footer_social i {
+  font-size: 1.2em;
+  opacity: .75;
+  margin-right: 10px;
 }

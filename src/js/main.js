@@ -121,7 +121,7 @@
 
       // Toggles the mobile views for menu, search, and close button
       navToggle.addEventListener('click', toggleNav);
-      searchToggle.addEventListener('click', toggleSearch);
+      // search.addEventListener('click', toggleSearch);
       closeToggle.addEventListener('click', closeAll);
     }
   });

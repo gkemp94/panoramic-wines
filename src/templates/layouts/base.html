@@ -6,6 +6,7 @@
     {% if site_settings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
     <meta name="description" content="{{ page_meta.meta_description }}">
     {{ require_css(get_asset_url('../../css/main.css')) }}
+    <script src="https://kit.fontawesome.com/7d8fe96e77.js" crossorigin="anonymous"></script>
     {# Where possible, improve page performance and speed by combining external http requests to reduce your
       overall number of calls -- here, you can use a single call to the gFonts api to get all the fonts you need
       https://developers.google.com/fonts/docs/getting_started

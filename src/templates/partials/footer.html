@@ -3,6 +3,44 @@
   label: Footer
 -->
 <footer class="footer">
+  <div class="container">
+  <div class="row-fluid">
+    <div class="span6">
+      <div class="footer__logo">
+        {% module 'site_logo' path='@hubspot/logo' %}
+      </div>
+      <div class="footer__copyright">
+        {% module_block module 'footer_copyright_text' path='@hubspot/text' %}
+          {% module_attribute 'value' %}© {{ year }} All rights reserved.{% end_module_attribute %}
+        {% end_module_block %}
+      </div>
+    </div>
+    <div class="span6">
+      <div class="row-fluid">
+        <div class="span6">
+          <h5>Links</h5>
+          <ul class="footer__links">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="span6">
+          <h5>Social</h5>
+          <div class="footer_social">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-hubspot"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
+<!--
+<footer class="footer">
   <div class="footer__container content-wrapper">
 
     {# Social follow section #}
@@ -30,3 +68,4 @@
 
   </div>
 </footer>
+-->

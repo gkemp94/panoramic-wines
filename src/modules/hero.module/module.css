@@ -1,0 +1,13 @@
+.hero {
+  height: 100vh;
+  margin-top: -80px;
+  padding-top: 80px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero > .container {
+  height: 100%;
+  color: var(--color-initial);
+}
