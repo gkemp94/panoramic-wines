@@ -333,7 +333,7 @@ body,
 .header__language-switcher-label-current,
 .header__language-switcher .lang_list_class li a {
   color: {{ header_nav_link_color }};
-  font-family: {{ body_font.font }}; 
+  /* font-family: {{ body_font.font }};  */
 }
 
 /*
