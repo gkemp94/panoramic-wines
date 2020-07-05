@@ -1,0 +1,50 @@
+[ {
+  "id" : "img",
+  "name" : "img",
+  "label" : "Image",
+  "required" : true,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80",
+    "alt" : null
+  }
+}, {
+  "id" : "8d18fcb9-7da1-9964-f443-a901251221de",
+  "name" : "background_color",
+  "label" : "Background Color",
+  "required" : true,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "646b9b04-d67e-642b-18b5-7b017b6f1dda",
+  "name" : "x_offset",
+  "label" : "X Offset",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "min" : -50,
+  "max" : 50,
+  "step" : 1,
+  "type" : "number",
+  "default" : 25
+}, {
+  "id" : "529a09c0-8a1d-6933-1360-f9cffa1865ce",
+  "name" : "y_offset",
+  "label" : "Y Offset",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "min" : -50,
+  "max" : 50,
+  "step" : 1,
+  "type" : "number",
+  "default" : 25
+} ]

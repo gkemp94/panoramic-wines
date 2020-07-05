@@ -1,0 +1,17 @@
+<!-- module html  -->
+
+  {% if module.img.src %}
+	{% set sizeAttrs = 'style="max-width: {{ module.img.width }}px; max-height: {{ module.img.height }}px" width="{{ module.img.width }}" height="{{ module.img.height }}"' %}
+	{% if module.img.size_type == 'auto' %}
+		{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+	{% elif module.img.size_type == 'auto_custom_max' %}
+		{% set sizeAttrs = 'style="max-width: {{ module.img.max_width }}px; max-height: {{ module.img.max_height }}px" width="100%" height="auto"'  %}
+	{% endif %}
+  <div class="panoramic-img" {{sizeAttrs}} >
+    <div class="background" style="transform: translate({{ module.x_offset }}px, {{ module.y_offset }}px);background-color:{{ module.background_color.color }}">
+
+    </div>
+    <img src="{{ module.img.src }}" alt="{{ module.img.alt }}" {{ sizeAttrs }}>
+  </div>
+{% endif %}
+
