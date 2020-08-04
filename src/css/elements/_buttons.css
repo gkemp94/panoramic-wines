@@ -45,3 +45,21 @@ button:active,
   color: #FFF;
   text-decoration: none;
 }
+
+.btn {
+  padding: 15px 53px;
+  background-color: var(--color-secondary);
+  border: 2px solid var(--color-secondary);
+  margin: .5rem;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.btn:hover {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.secondary-btn {
+  background-color: transparent;
+}
